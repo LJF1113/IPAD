@@ -14,7 +14,7 @@
 
 [//]: # (<video src="page.mp4" controls="controls" width="1080" height="720"></video>)
 ![](assets/teaser.png)
-*IPAD: Industrial Process Anomaly Detection Dataset*
+# IPAD: Industrial Process Anomaly Detection Dataset
 
 [//]: # (## Introduction)
 [//]: # (![]&#40;assets/model.png&#41;)
