@@ -25,22 +25,12 @@ Video anomaly detection (VAD) is a challenging task aiming to recognize anomalie
 
 ## Training
 ```
-python train.py
---dataset_type [Your dataset]
---model [Model name]
---epochs [Epochs]
+python train.py --dataset_type [Your dataset] --model [Model name] --epochs [Epochs]
 ```
-&nbsp;
-
 
 ## Evaluating
 ```
-python evaluate.py
---dataset_type [Your dataset]
---model [Model name]
---model_dir [Checkpoint path]
---img_dir [Optional]
---vid_dir [Optional]
+python evaluate.py --dataset_type [Your dataset] --model [Model name] --model_dir [Checkpoint path] --img_dir [Optional] --vid_dir [Optional]
 ```
 
 ## Acknowledgments
