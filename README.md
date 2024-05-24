@@ -25,7 +25,6 @@ Video anomaly detection (VAD) is a challenging task aiming to recognize anomalie
 ## Pipeline
 
 The proposed reconstruction-based model with periodic information. The model undergoes an initial pre-trainingphase using synthetic data. Subsequently, the encoder segment is fine-tuned through a combination of real data and LoRA, enhancing its performance and adaptability. The features of the input video clip are first extracted by the video swin transformerto get 𝐹. Then addressing to the memory module and period classification are performed separately to get the initial weights 𝑊and period relative position 𝑡𝑝. Then the weights are updated to get 𝑤ˆ , which in turn is computed to get the output feature 𝐹ˆ.Finally, the reconstructed video frame is obtained using the I3D decoder.
-[//]: # (## Introduction)
 ![](assets/pipeline.png)
 
 ## Training
