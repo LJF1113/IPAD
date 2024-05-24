@@ -21,8 +21,10 @@ Video anomaly detection (VAD) is a challenging task aiming to recognize anomalie
 
 ## Dataset Statistics
 ![](assets/Dataset.png)
+
+## Pipeline
 [//]: # (## Introduction)
-[//]: # (![]&#40;assets/model.png&#41;)
+![](assets/pipeline.png)
 
 ## Training
 ```
