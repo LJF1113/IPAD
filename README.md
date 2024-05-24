@@ -19,37 +19,25 @@
 [//]: # (## Introduction)
 [//]: # (![]&#40;assets/model.png&#41;)
 
-#### Test the trained low-level controller model
+#### Training
 ```
-python calm/run.py
---test
---task HumanoidAMPGetup
---num_envs 16
---cfg_env calm/data/cfg/humanoid.yaml
---cfg_train calm/data/cfg/train/rlg/calm_humanoid.yaml
---motion_file [Your file path]/motions.yaml
---checkpoint [Your file path]/Humanoid_00014500.pth
+python train.py
+--dataset_type [Your dataset]
+--model [Model name]
+--epochs [Epochs]
 ```
 &nbsp;
 
 
-#### High-level policy training
+#### Evaluating
 ```
-python calm/run.py
---task HumanoidSpecAnySKill
---cfg_env calm/data/cfg/humanoid_anyskill.yaml
---cfg_train calm/data/cfg/train/rlg/spec_anyskill.yaml
---motion_file [Your file path]/motions.yaml
---llc_checkpoint [Your file path]/Humanoid_00014500.pth
---track
---text_file calm/data/texts.yaml
---wandb_project_name special_policy
---render
+python evaluate.py
+--dataset_type [Your dataset]
+--model [Model name]
+--model_dir [Checkpoint path]
+--img_dir [Optional]
+--vid_dir [Optional]
 ```
-`--llc_checkpoint` specifies the checkpoint to use for the low-level controller. `--text_file` specifies motion captions and their weights.
-For both training method, we use pretrained model to extract the image features by default. If you want to render with camera, you just need add `--render` at the end.
-
-
 
 ## Acknowledgments
 Our code is based on [LearningNotToReconstructAnomalies](https://github.com/aseuteurideu/LearningNotToReconstructAnomalies). Thanks for the great project.
