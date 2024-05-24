@@ -1,7 +1,5 @@
 # IPAD
 
-IPAD: Industrial Process Anomaly Detection Dataset
-
 <p align="left">
     <a href='https://arxiv.org/abs/2404.15033'>
       <img src='https://img.shields.io/badge/Paper-arXiv-red?style=plastic&logo=arXiv&logoColor=red' alt='Paper arXiv'>
@@ -16,7 +14,7 @@ IPAD: Industrial Process Anomaly Detection Dataset
 
 [//]: # (<video src="page.mp4" controls="controls" width="1080" height="720"></video>)
 ![](assets/teaser.png)
-**AnySkill, a novel hierarchical method that learns physically plausible interactions following open-vocabulary instructions.**
+**IPAD: Industrial Process Anomaly Detection Dataset**
 
 [//]: # (## Introduction)
 [//]: # (![]&#40;assets/model.png&#41;)
