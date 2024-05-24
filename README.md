@@ -14,12 +14,12 @@
 
 [//]: # (<video src="page.mp4" controls="controls" width="1080" height="720"></video>)
 ![](assets/teaser.png)
-**IPAD: Industrial Process Anomaly Detection Dataset**
+*IPAD: Industrial Process Anomaly Detection Dataset*
 
 [//]: # (## Introduction)
 [//]: # (![]&#40;assets/model.png&#41;)
 
-#### Training
+## Training
 ```
 python train.py
 --dataset_type [Your dataset]
@@ -29,7 +29,7 @@ python train.py
 &nbsp;
 
 
-#### Evaluating
+## Evaluating
 ```
 python evaluate.py
 --dataset_type [Your dataset]
