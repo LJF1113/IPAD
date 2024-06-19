@@ -31,9 +31,8 @@ class MemoryUnit(nn.Module):
         indices = (torch.floor((indices/126)*self.mem_dim).cpu().numpy()).astype(int)
         # # print(indices)
         att_weight = F.linear(input, self.weight)  # Fea x Mem^T, (TxC) x (CxM) = TxM
-        for i in range(1):
-            a = score[i]
-            att_weight[:,indices[i]-7:indices[i]+8]=att_weight[:,indices[i]-7:indices[i]+8]+att_weight[:,indices[i]-7:indices[i]+8].clone()*score[i]
+        a = score[i]
+        att_weight[:,indices[i]-7:indices[i]+8]=att_weight[:,indices[i]-7:indices[i]+8]+att_weight[:,indices[i]-7:indices[i]+8].clone()*score[i]
         att_weight = F.softmax(att_weight, dim=1)  # TxM
         # print(att_weight.shape)
         # print(period_score.shape)
